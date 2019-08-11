@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="column left">
+    <label for="gridSize">Grid size</label>
+    <input type="number" onchange="setGridSize(this.value)" id="gridSize" name="gridSize"/>
+    <label for="squares">Squares</label>
+    <input type="number" onchange="setSquares(this.value)" id="squares" name="squares"/>
+    <div class="buttons">
+        <button onclick="setupGame()">Setup game</button>
+        <button id="showButton" onclick="show()">Hide</button>
+    </div>
+</div>
+<div class="column right">
+    <canvas id="grid" width="1000" height="1000"></canvas>
+</div>
+</body>
+</html>
